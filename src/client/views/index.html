@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate a news article or text with Aylient NLP</title>
+    </head>
+
+    <body>
+
+    <header>
+        <div class="header">
+            Udacity
+        </div>
+        <div class="sub-header">
+            Project: Evaluate a News Article with NLP
+        </div>
+    </header>
+
+        <main class="container">
+            <h1 class="title">About Aylian Text Analysis API</h1>
+            <p class="content">
+                The Aylien Text Analysis API provides powerful and flexible AI-driven content analysis solutions that bring the power of NLP to the masses. We help developers, data scientists, and marketers understand human-generated textual content at scale.
+            </p>
+            <h2 class="sub-title">Try it out! Type in a "URL" to see what the Aylient NLP understands from it.</h2>
+
+            <section class="errors">
+                <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+                <div id="error"></div>
+            </section>
+
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="text" type="text" name="input" value="" placeholder="Url">
+                    <button class="button" type="submit" value="Try out!" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">Try it out!</button>
+                </form>
+            </section>
+
+            <section>
+                <div class="results">
+                    <ul>
+                        <li class="results-title">
+                            <h3>Text Polarity:</h3>
+                            <p id="polarity"></p>
+                        </li>
+                        <li class="results-title">
+                            <h4>Confidence: </h4>
+                            <p id="polarity_confidence"></p>
+                        </li>
+
+                        <li class="results-title">
+                            <h3>Text Subjectivity:</h3>
+                            <p id="subjectivity"></p>
+                        </li>
+                        <li class="results-title">
+                            <h4>Confidence: </h4>
+                            <p id="subjectivity_confidence"></p>
+                        </li>
+                        <li class="results-title">
+                            <p id="excerpt"></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+    <footer class="footer">
+        <p>Aylient Natural Language Processing</p>
+    </footer>
+
+    </body>
+</html>
